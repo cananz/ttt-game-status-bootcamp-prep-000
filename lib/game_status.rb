@@ -51,6 +51,6 @@ end
 
 def winner(board)
   if won?(board)
-    return position_1
+    return board[win_combination[0]]
   end
 end
