@@ -49,7 +49,7 @@ def over?(board)
 end
 
 
-def winner?(board)
+def winner(board)
   if won?(board)
     return position_1
   end
