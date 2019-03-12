@@ -50,7 +50,15 @@ end
 
 
 def winner(board)
+  index_0 = win_combination[0]
+  index_1 = win_combination[1]
+  index_2 = win_combination[2]
+
+  position_1 = board[index_0]
+  position_2 = board[index_1]
+  position_3 = board[index_2]
+
   if won?(board)
-    return board[win_combination[0]]
+    return position_1
   end
 end
