@@ -50,11 +50,11 @@ end
 
 
 def winner(board)
- if won?(board == false
-   return nil
-  elsif board[won?(board)[0]] == "X"
+ if board[won?(board)[0]] == "X"
    return "X"
- else
+ elsif board[won?(board)[0]] == "O"
   return "O"
+ else
+   return nil
   end
 end
